@@ -1,0 +1,82 @@
+[
+  {
+    "id": "m01",
+    "tarefa": "Quantos pedidos estão com status em_transito na planilha de pedidos?",
+    "verificacao": "numerico",
+    "esperado": "2",
+    "especialistas_esperados": ["analista"],
+    "exige_fonte": true,
+    "dificuldade": "baixa",
+    "nota": "pedidos 4474 e 4476. Tarefa de um especialista só: serve de linha de base para ver se o supervisor evita handoffs desnecessários."
+  },
+  {
+    "id": "m02",
+    "tarefa": "Segundo o artigo do CAMEL, quais são os quatro modos de falha observados na interpretação de papéis?",
+    "verificacao": "contem",
+    "esperado": ["invers", "repet", "evasiv", "laco"],
+    "especialistas_esperados": ["pesquisador"],
+    "exige_fonte": true,
+    "dificuldade": "media",
+    "nota": "inversão de papéis, repetição da instrução, resposta evasiva e laço infinito. Só o pesquisador alcança o corpus."
+  },
+  {
+    "id": "m03",
+    "tarefa": "Aplicando o desconto de contrato descrito nas notas da equipe, qual é o valor dos itens do pedido 4477 depois do desconto?",
+    "verificacao": "numerico",
+    "esperado": "765",
+    "especialistas_esperados": ["analista"],
+    "exige_fonte": true,
+    "dificuldade": "media",
+    "nota": "20 itens x R$ 45,00 = R$ 900,00; menos 15% da Vetrix = R$ 765,00. Exige cruzar pedidos.csv com notas.md."
+  },
+  {
+    "id": "m04",
+    "tarefa": "Escreva um parágrafo curto para o time explicando o que o AutoGen chama de resposta automática e para que serve o limite de respostas automáticas consecutivas. Cite a fonte.",
+    "verificacao": "contem",
+    "esperado": ["automat", "limite"],
+    "especialistas_esperados": ["pesquisador", "redator"],
+    "exige_fonte": true,
+    "dificuldade": "media",
+    "nota": "o pesquisador apura no corpus, o redator consolida. O redator não tem ferramenta de coleta, então depende do quadro compartilhado."
+  },
+  {
+    "id": "m05",
+    "tarefa": "Prepare um resumo para a equipe com o valor dos itens de cada pedido da Vetrix Logística, já com o desconto de contrato aplicado, e o total somado dos dois pedidos.",
+    "verificacao": "numerico",
+    "esperado": "1224",
+    "especialistas_esperados": ["analista", "redator"],
+    "exige_fonte": true,
+    "dificuldade": "alta",
+    "nota": "pedido 4472: 12 x 45,00 = 540,00, menos 15% = 459,00. Pedido 4477: 20 x 45,00 = 900,00, menos 15% = 765,00. Total 1.224,00."
+  },
+  {
+    "id": "m06",
+    "tarefa": "Monte um documento curto para a equipe de logística com duas partes: quantos pedidos existem em cada status hoje, e uma explicação, baseada no corpus, de por que um sistema com supervisor precisa limitar o número de rodadas da conversa.",
+    "verificacao": "contem",
+    "esperado": ["entregue", "transito", "rodada"],
+    "especialistas_esperados": ["analista", "pesquisador", "redator"],
+    "exige_fonte": true,
+    "dificuldade": "alta",
+    "nota": "3 entregues, 2 em trânsito, 1 cancelado, 1 processando. A parte do porquê vem do corpus. Nenhum especialista sozinho alcança as duas partes."
+  },
+  {
+    "id": "m07",
+    "tarefa": "Qual é o peso total, em libras, de todos os monitores SKU-1002 em estoque?",
+    "verificacao": "numerico",
+    "esperado": "435.6",
+    "especialistas_esperados": ["analista"],
+    "exige_fonte": true,
+    "dificuldade": "alta",
+    "nota": "38 x 5,20 kg = 197,6 kg; convertido dá aproximadamente 435,63 lb. Exige ler, calcular e converter."
+  },
+  {
+    "id": "m08",
+    "tarefa": "Qual foi o faturamento total da empresa Korlan SA no ano de 2025?",
+    "verificacao": "abstencao",
+    "esperado": "",
+    "especialistas_esperados": [],
+    "exige_fonte": false,
+    "dificuldade": "alta",
+    "nota": "a Korlan aparece como cliente na planilha, mas o faturamento dela não existe em nenhuma ferramenta. O sistema deve dizer que não tem essa informação. É a tarefa que mede se a divisão de papéis produz abstenção ou invenção coletiva."
+  }
+]

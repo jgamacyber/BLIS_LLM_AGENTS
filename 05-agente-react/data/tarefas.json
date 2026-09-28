@@ -1,0 +1,92 @@
+[
+  {
+    "id": "t01",
+    "tarefa": "Qual é o valor total do pedido 4471, somando os itens e o frete?",
+    "verificacao": "numerico",
+    "esperado": "318",
+    "ferramentas_esperadas": ["ler_arquivo", "calculadora"],
+    "dificuldade": "media",
+    "nota": "3 itens x 98,50 = 295,50, mais 22,50 de frete"
+  },
+  {
+    "id": "t02",
+    "tarefa": "Quantos quilos pesam, no total, todas as unidades do SKU-1001 que estão em estoque?",
+    "verificacao": "numerico",
+    "esperado": "123.25",
+    "ferramentas_esperadas": ["ler_arquivo", "calculadora"],
+    "dificuldade": "media",
+    "nota": "145 unidades x 0,85 kg"
+  },
+  {
+    "id": "t03",
+    "tarefa": "Segundo as notas da equipe, o pedido 4472 teria direito a frete gratuito? Responda sim ou não e justifique com o valor.",
+    "verificacao": "contem",
+    "esperado": ["sim"],
+    "ferramentas_esperadas": ["ler_arquivo", "calculadora"],
+    "dificuldade": "alta",
+    "nota": "12 itens x 45,00 = 540,00, acima do limite de 300,00"
+  },
+  {
+    "id": "t04",
+    "tarefa": "No artigo do ReAct, o que é um pensamento e por que ele não gera observação?",
+    "verificacao": "contem",
+    "esperado": ["nao afeta", "não afeta", "contexto"],
+    "ferramentas_esperadas": ["buscar_corpus"],
+    "dificuldade": "baixa",
+    "nota": "o pensamento é uma ação no espaço da linguagem; só atualiza o contexto"
+  },
+  {
+    "id": "t05",
+    "tarefa": "Em qual porcentagem da janela de contexto o MemGPT dispara o aviso de pressão de memória?",
+    "verificacao": "numerico",
+    "esperado": "70",
+    "ferramentas_esperadas": ["buscar_corpus"],
+    "dificuldade": "baixa",
+    "nota": "limiar de aviso em 70% da janela"
+  },
+  {
+    "id": "t06",
+    "tarefa": "Qual é o peso total, em libras, de todos os monitores SKU-1002 em estoque?",
+    "verificacao": "numerico",
+    "esperado": "435.6",
+    "ferramentas_esperadas": ["ler_arquivo", "calculadora", "converter_unidades"],
+    "dificuldade": "alta",
+    "nota": "38 x 5,20 = 197,6 kg; 197,6 kg = 435,63 lb aproximadamente"
+  },
+  {
+    "id": "t07",
+    "tarefa": "Quantos pedidos da lista estão com status em_transito?",
+    "verificacao": "numerico",
+    "esperado": "2",
+    "ferramentas_esperadas": ["ler_arquivo"],
+    "dificuldade": "baixa",
+    "nota": "pedidos 4474 e 4476"
+  },
+  {
+    "id": "t08",
+    "tarefa": "Aplicando o desconto de contrato da Vetrix Logística descrito nas notas, qual seria o valor dos itens do pedido 4477 após o desconto?",
+    "verificacao": "numerico",
+    "esperado": "765",
+    "ferramentas_esperadas": ["ler_arquivo", "calculadora"],
+    "dificuldade": "alta",
+    "nota": "20 x 45,00 = 900,00; menos 15% = 765,00"
+  },
+  {
+    "id": "t09",
+    "tarefa": "Segundo o CoALA, quais são os três tipos de ação interna e o que cada um acessa?",
+    "verificacao": "contem",
+    "esperado": ["recupera", "racioc", "aprendiz"],
+    "ferramentas_esperadas": ["buscar_corpus"],
+    "dificuldade": "media",
+    "nota": "recuperação lê da memória de longo prazo, raciocínio atualiza a de trabalho, aprendizado escreve na de longo prazo"
+  },
+  {
+    "id": "t10",
+    "tarefa": "Qual foi o faturamento total da empresa Korlan SA no ano de 2025?",
+    "verificacao": "abstencao",
+    "esperado": "",
+    "ferramentas_esperadas": [],
+    "dificuldade": "alta",
+    "nota": "não há essa informação em nenhuma ferramenta; o agente deve dizer que não sabe"
+  }
+]

@@ -1,0 +1,8 @@
+pedido;cliente;data;itens;valor_unitario;frete;status
+4471;Helena Duarte;12/03/2026;3;98,50;22,50;entregue
+4472;Vetrix Logistica;12/03/2026;12;45,00;80,00;entregue
+4473;Marina Alves;15/03/2026;1;349,90;0,00;cancelado
+4474;Korlan SA;18/03/2026;7;120,00;65,00;em_transito
+4475;Helena Duarte;22/03/2026;2;98,50;22,50;entregue
+4476;Bruno Tavares;25/03/2026;5;62,40;35,00;em_transito
+4477;Vetrix Logistica;28/03/2026;20;45,00;120,00;processando

@@ -1,0 +1,13 @@
+INVENTARIO - DEPOSITO CENTRAL
+Atualizado em 28/03/2026
+
+Codigo    Produto                      Qtd    Peso unitario
+SKU-1001  Teclado mecanico compacto     145   0,85 kg
+SKU-1002  Monitor 27 polegadas           38   5,20 kg
+SKU-1003  Cabo HDMI 2 metros            520   0,12 kg
+SKU-1004  Suporte de monitor duplo       67   3,40 kg
+SKU-1005  Webcam full HD                112   0,22 kg
+SKU-1006  Headset com cancelamento       89   0,31 kg
+
+Capacidade maxima do deposito: 12000 kg
+Observacao: o SKU-1002 tem reposicao prevista para 05/04/2026.
