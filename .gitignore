@@ -1,0 +1,28 @@
+# Segredos — NUNCA versionar
+.env
+*.env
+!.env.example
+
+# Saídas geradas pelos comandos (reconstrua rodando main.py)
+saidas/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Papers (copyright) — não versionar
+*.pdf
+
+# SO / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
